@@ -9,17 +9,28 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="inner-page">
-    <header>
-      <nav class="main-navigation">
-        <a href="index.html">
-          <img src="img/index-logo.svg" alt="Логотип «Глейси»" width="154" height="64">
-        </a>
+  <body class="catalog-page">
+    <div class="main-container">
+    <header class="main-header">
+    <div class="main-navigation-container">
+    <nav class="main-navigation">
+      <a href="index.html">
+        <img src="img/index-logo.svg" alt="Логотип «Глейси»" width="154" height="64">
+      </a>
+      <div class="site-navigation-container">
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="" target="_blank">Доставка и оплата</a></li>
-          <li><a href="" target="_blank">О Компании</a></li>
+          <li>
+            <a href="catalog.html" target="_blank">Каталог</a>
+          </li>
+          <li>
+            <a href="" target="_blank">Доставка и оплата</a>
+          </li>
+          <li>
+            <a href="" target="_blank">О Компании</a>
+          </li>
         </ul>
+      </div>
+      <div class="user-navigation-container">
         <ul class="user-navigation">
           <li>
             <a class="search-button" href="#">
@@ -35,28 +46,24 @@
           <li>
             <a class="cart-button" href="#">
               <img src="img/cart.svg" alt="Корзина" width="21" height="20">
-              <span class="cart-text">Корзина</span>
+              <span class="cart-text">Пусто</span>
             </a>
           </li>
         </ul>
-        <ul class="bread-crumbs">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><span class="current-crumb">Сливочное</span></li>
-        </ul>
-        <article>
+        </div>
+        <div class="work-hours">
           <h2 class="visually-hidden">Режим работы</h2>
-          <p class="work-hours">
+          <p>
             С 10 до 20, ежедневно<br>
             <span>8 812 450-25-25</span>
           </p>
-        <article>
+        </div>
       </nav>
-    </header>
+      </div>
     <main class="container">
       <h1>Сливочное мороженое</h1>
-      <section class="visually-hidden">
-        <form class="" action="https://echo.htmlacademy.ru" method="post">
+      <section class="sort">
+        <form class="sort-form" action="https://echo.htmlacademy.ru" method="post">
 
           <label for="sort">Сортировка</label>
           <select class="" name="sort" id="sort">
@@ -64,7 +71,7 @@
           </select>
 
           <label for="range">Цена: 100 руб. - 500 руб.</label>
-            <input type="range" id="range" name="range" min="100" max="500">
+            <input type="range" id="range" name="range" min="100" max="500" value="">
 
           <label for="fat">Жирность:</label>
           <fieldset id="fat">
@@ -105,7 +112,7 @@
         </form>
       </section>
       <section>
-        <ul class="assortment">
+        <ul class="assortment-list">
           <li>
             <img src="img/1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"><br>
             <a href="" target="_blank">Сливочное с апельсиновым <br> джемом и цитрусовой стружкой</a>
@@ -175,46 +182,49 @@
         <li class="pagination-item"><a href="#">4</a></li>
       </ul>
     </main>
-    <footer class="main-footer">
-      <div>
+    <footer class="main-footer catalog-footer">
+      <h2 class="visually-hidden">Соцсети</h2>
+      <div class="social-contacts-container">
         <ul class="social-contacts">
           <li>
-            <a href="" target="_blank">
-              <img src="img/twitter.svg">
+            <a class="social-button" href="" target="_blank">
+              <img class="social-button__facebook" src="img/fb.svg" alt="" width="32" height="32">
             </a>
           </li>
           <li>
-            <a href="" target="_blank">
-              <img src="img/instagram.svg">
+            <a class="social-button" href="" target="_blank">
+              <img class="social-button__vkontakte" src="img/vk.svg" alt="" width="32" height="32">
             </a>
           </li>
           <li>
-            <a href="" target="_blank">
-              <img src="img/fb.svg">
+            <a class="social-button" href="" target="_blank">
+              <img class="social-button__instagram" src="img/instagram.svg" alt="" width="32" height="32">
             </a>
           </li>
           <li>
-            <a href="" target="_blank">
-              <img src="img/vk.svg">
+            <a class="social-button" href="" target="_blank">
+              <img class="social-button__twitter" src="img/twitter.svg" alt="" width="32" height="32">
             </a>
           </li>
         </ul>
       </div>
+      <h2 class="visually-hidden">Меню</h2>
       <menu class="menu">
-        <li>
-          <img src="img/heart.svg" alt="" width="15" height="13">
+        <ul class="menu-list">
+        <li class="menu-list__item menu-list__item-providers">
           <a href="" target="_blank"><b>Для поставщиков</b></a>
         </li>
-        <li><a href="" target="_blank">О производстве</a></li>
-        <li><a href="" target="_blank">Наши документы</a></li>
-        <li><a href="" target="_blank">Экологические стандарты</a></li>
+        <li class="menu-list__item"><a href="" target="_blank">О производстве</a></li>
+        <li class="menu-list__item"><a href="" target="_blank">Наши документы</a></li>
+        <li class="menu-list__item"><a href="" target="_blank">Экологические стандарты</a></li>
+        </ul>
       </menu>
-      <div class="copyright">
-        <p>
-          <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="108" height="39"><br>
-          Сделано в <a href="" target="_blank">HTML Academy</a> © 2019
-        </p>
-      </div>
+      <section class="copyright">
+      <p>
+        <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="108" height="39"><br>
+        Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2019
+      </p>
+      </section>
     </footer>
     <section class="visually-hidden">
       <ul>
@@ -235,5 +245,6 @@
         </li>
       </ul>
     </section>
+  </div>
   </body>
 </html>

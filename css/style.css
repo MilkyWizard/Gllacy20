@@ -10,20 +10,11 @@ body {
 }
 
 .visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-
-  clip: rect(0, 0, 0, 0);
+display: none;
 }
 
-.inner-page {
+.catalog-page {
   background-color: #90a79a;
-  background-image: url("../img/background-catalog.png");
-  background-repeat: no-repeat;
-  width: 1200px;
-
 }
 
 a {
@@ -95,7 +86,7 @@ a:hover {
   line-height: 18px;
   color: #ffffff;
 
-  border-bottom: 1px solid #a0b5a9;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .site-navigation a:hover {
@@ -126,7 +117,7 @@ a:hover {
 
 
 .search-button {
-  background-color: #a0b5a9;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
   padding: 6px 8px;
 }
@@ -140,7 +131,7 @@ a:hover {
 .login-button {
   display: flex;
   align-items: center;
-  background-color: #a0b5a9;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
 
   padding-top: 6px;
@@ -166,8 +157,7 @@ a:hover {
 .cart-button {
   display: flex;
   align-items: center;
-  background-color: #000000;
-  background-color: #a0b5a9;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
 
   padding-top: 6px;
@@ -205,7 +195,7 @@ a:hover {
   line-height: 22px;
   font-weight: 500;
 
-  border-bottom: 1px solid #9db1a5;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .hits-list li {
@@ -217,28 +207,39 @@ a:hover {
   border-radius: 100%;
 }
 
-.assortment li {
+.assortment-list {
+  width: 1146px;
+  padding: 0;
+  margin: auto;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.assortment-list li {
   list-style: none;
 }
 
-.assortment img {
+.assortment-list img {
   border-radius: 200px;
 }
 
-.assortment a {
+.assortment-list a {
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
   border-bottom: 1px solid #323232;
 }
 
-.assortment h2 {
+.assortment-list h2 {
   font-size: 45px;
   line-height: 45px;
   text-shadow: 1px 1px 2px #6b7d74;
 }
 
-.assortment small {
+.assortment-list small {
   font-size: 30px;
 }
 
@@ -406,6 +407,10 @@ color: #000000;
   border: none;
 }
 
+.catalog-footer: {
+  border-top: 1px solid rgba(255, 0, 0, 0.2);
+}
+
 .main-footer {
   font-size: 13px;
   line-height: 18px;
@@ -420,13 +425,12 @@ color: #000000;
   border: none;
 }
 
-
 .social-button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid #c2cec7;
+  border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 50px;
 }
 
@@ -447,15 +451,9 @@ color: #000000;
 
 }
 
-.heart::before {
-content: "";
-
-background-image: url("../img/heart.svg");
-}
-
 .menu a,
 .copyright a {
-  border-bottom: 1px solid #9db1a5;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /*Стили для сетки*/
