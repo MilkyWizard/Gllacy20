@@ -32,20 +32,23 @@
       </div>
       <div class="user-navigation-container">
         <ul class="user-navigation">
-          <li>
+          <li class="user-navigation__search">
             <a class="search-button" href="#">
-              <img src="img/search.svg" alt="Поиск" width="17" height="17">
+              <img class="search-button__hover" src="img/search-hover.svg" alt="" width="30" height="17">
+              <img class="search-button__default" src="img/search.svg" alt="Поиск" width="17" height="17">
             </a>
           </li>
-          <li>
+          <li class="user-navigation__login">
             <a class="login-button" href="#">
-              <img src="img/login.svg" alt="Вход" width="21" height="19">
+              <img class="login-button__hover" src="img/login-hover.svg" width="52" height="19">
+              <img class="login-button__default" src="img/login.svg" alt="Вход" width="21" height="19">
               <span class="login-text">Вход</span>
             </a>
           </li>
-          <li>
+          <li class="user-navigation__cart">
             <a class="cart-button" href="#">
-              <img src="img/cart.svg" alt="Корзина" width="21" height="20">
+              <img class="cart-button__hover" src="img/cart-hover.svg" alt="" width="52" height="20">
+              <img class="cart-button__default" src="img/cart.svg" alt="Корзина" width="21" height="20">
               <span class="cart-text">Пусто</span>
             </a>
           </li>
@@ -175,12 +178,15 @@
           </li>
         </ul>
       </section>
-      <ul class="pagination-list">
-        <li class="pagination-item-current"><a href="#">1</a></li>
-        <li class="pagination-item"><a href="#">2</a></li>
-        <li class="pagination-item"><a href="#">3</a></li>
-        <li class="pagination-item"><a href="#">4</a></li>
-      </ul>
+      <div class="pagination">
+        <ul class="pagination-list">
+          <li class="pagination-list__item pagination-list__item-current"><a href="#">1</a></li>
+          <li class="pagination-list__item"><a href="#">2</a></li>
+          <li class="pagination-list__item"><a href="#">3</a></li>
+          <li class="pagination-list__item"><a href="#">4</a></li>
+          <li class="pagination-list__item"><a href="#">5</a></li>
+        </ul>
+      </div>
     </main>
     <footer class="main-footer catalog-footer">
       <h2 class="visually-hidden">Соцсети</h2>
@@ -211,12 +217,17 @@
       <h2 class="visually-hidden">Меню</h2>
       <menu class="menu">
         <ul class="menu-list">
-        <li class="menu-list__item menu-list__item-providers">
-          <a href="" target="_blank"><b>Для поставщиков</b></a>
-        </li>
-        <li class="menu-list__item"><a href="" target="_blank">О производстве</a></li>
-        <li class="menu-list__item"><a href="" target="_blank">Наши документы</a></li>
-        <li class="menu-list__item"><a href="" target="_blank">Экологические стандарты</a></li>
+          <div class="menu-list-one">
+            <img class="heart" src="img/heart.svg" alt="" width="15" height="13">
+            <li class="menu-list__item menu-list__item-providers">
+              <a href="" target="_blank"><b>Для поставщиков</b></a>
+            </li>
+            <li class="menu-list__item"><a href="" target="_blank">О производстве</a></li>
+          </div>
+            <div class="menu-list-two">
+              <li class="menu-list__item"><a href="" target="_blank">Наши документы</a></li>
+              <li class="menu-list__item"><a href="" target="_blank">Экологические стандарты</a></li>
+          </div>
         </ul>
       </menu>
       <section class="copyright">

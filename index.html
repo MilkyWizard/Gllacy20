@@ -34,20 +34,23 @@
           </div>
           <div class="user-navigation-container">
             <ul class="user-navigation">
-              <li>
+              <li class="user-navigation__search">
                 <a class="search-button" href="#">
-                  <img src="img/search.svg" alt="Поиск" width="17" height="17">
+                  <img class="search-button__hover" src="img/search-hover.svg" alt="" width="30" height="17">
+                  <img class="search-button__default" src="img/search.svg" alt="Поиск" width="17" height="17">
                 </a>
               </li>
-              <li>
+              <li class="user-navigation__login">
                 <a class="login-button" href="#">
-                  <img src="img/login.svg" alt="Вход" width="21" height="19">
+                  <img class="login-button__hover" src="img/login-hover.svg" width="52" height="19">
+                  <img class="login-button__default" src="img/login.svg" alt="Вход" width="21" height="19">
                   <span class="login-text">Вход</span>
                 </a>
               </li>
-              <li>
+              <li class="user-navigation__cart">
                 <a class="cart-button" href="#">
-                  <img src="img/cart.svg" alt="Корзина" width="21" height="20">
+                  <img class="cart-button__hover" src="img/cart-hover.svg" alt="" width="52" height="20">
+                  <img class="cart-button__default" src="img/cart.svg" alt="Корзина" width="21" height="20">
                   <span class="cart-text">Пусто</span>
                 </a>
               </li>
@@ -186,22 +189,23 @@
             <div class="distribution-bg">
             <section class="distribution">
                 <h2 class="visually-hidden">Рассылка</h2>
-                  <p>
+                  <p class="distribution__text">
                       Подпишитесь на нашу сладкую рассылку и будете всегда в курсе<br>
                       всего самого вкусного, что у нас происходит. Обещаем не спамить<br>
                       и не слать всякой ненужной ерунды. Честно =)
                   </p>
                   <form class="distribution-form" action="https://echo.htmlacademy.ru" method="post">
-                    <input type="email" id="email" name="email"
-                     placeholder="Электронная почта">
-                    <button class="distribution-button" type="submit">Отправить</button>
+                    <input class="distribution-form__email" type="email" id="email" name="email"
+                     placeholder="email@example.com">
+                    <button class="distribution-form__button" type="submit">Отправить</button>
                   </form>
             </section>
             </div>
           </div>
         </main>
         <div class="contacts-container">
-          <img src="img/map.png" alt="Адрес главного офиса" width="1200" height="429">
+        <img src="img/map.png" alt="Адрес главного офиса" width="1200" height="429">
+        <div class="contacts-wrap">
         <section class="contacts">
           <h2 class="visually-hidden">Как до нас добраться</h2>
           <p>Адрес главного офиса<br>
@@ -209,15 +213,16 @@
             <span>
               ул. Большая Конюшенная<br>
               19/8, Санкт-Петербург
-            </span>
+              </span>
             <br>
             <br>
-            Для заказов по телефону:<br>
+              Для заказов по телефону:<br>
             <span class="number">8 812 450-25-25</span><br>
             (с 10 до 20 ежедневно)
           </p>
           <a class="contact-button" href="#">Форма обратной связи</a>
         </section>
+        </div>
         </div>
         <footer class="main-footer">
           <h2 class="visually-hidden">Соцсети</h2>
@@ -248,19 +253,24 @@
           <h2 class="visually-hidden">Меню</h2>
           <menu class="menu">
             <ul class="menu-list">
-            <li class="menu-list__item menu-list__item-providers">
-              <a href="" target="_blank"><b>Для поставщиков</b></a>
-            </li>
-            <li class="menu-list__item"><a href="" target="_blank">О производстве</a></li>
-            <li class="menu-list__item"><a href="" target="_blank">Наши документы</a></li>
-            <li class="menu-list__item"><a href="" target="_blank">Экологические стандарты</a></li>
+              <div class="menu-list-one">
+                <img class="heart" src="img/heart.svg" alt="" width="15" height="13">
+                <li class="menu-list__item menu-list__item-providers">
+                  <a href="" target="_blank"><b>Для поставщиков</b></a>
+                </li>
+                <li class="menu-list__item"><a href="" target="_blank">О производстве</a></li>
+              </div>
+                <div class="menu-list-two">
+                  <li class="menu-list__item"><a href="" target="_blank">Наши документы</a></li>
+                  <li class="menu-list__item"><a href="" target="_blank">Экологические стандарты</a></li>
+              </div>
             </ul>
           </menu>
           <section class="copyright">
-          <p>
-            <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="108" height="39"><br>
-            Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2019
-          </p>
+            <a  href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="108" height="39"><br>
+            </a>
+            Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2019
           </section>
         </footer>
         <section class="visually-hidden">
