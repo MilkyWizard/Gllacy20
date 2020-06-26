@@ -8,6 +8,7 @@
      rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
   </head>
   <body>
     <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
@@ -18,39 +19,71 @@
         <header class="main-header">
         <div class="main-navigation-container">
         <nav class="main-navigation">
-          <img src="img/index-logo.svg" alt="Логотип «Глейси»" width="154" height="64">
+          <img class="main-logo" src="img/index-logo.svg" alt="Логотип «Глейси»" width="154" height="64">
           <div class="site-navigation-container">
             <ul class="site-navigation">
-              <li>
-                <a href="catalog.html" target="_blank">Каталог</a>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link site-navigation__catalog" href="catalog.html" target="_blank">Каталог</a>
+                <div class="catalog-popup-off visually-hidden">
+                  <ul class="catalog-popup__list">
+                    <li class="catalog-popup__list-item-legend">Новинки</li>
+                    <img src="img/border.svg" alt="">
+                    <li class="catalog-popup__list-item"><a class="catalog-popup__list-link" href="catalog.html">Сливочное</a></li>
+                    <li class="catalog-popup__list-item catalog-popup_list-item-current">Щербеты</li>
+                    <li class="catalog-popup__list-item">Фруктовый лёд</li>
+                    <li class="catalog-popup__list-item">Мелорин</li>
+                  </ul>
+                </div>
               </li>
-              <li>
-                <a href="" target="_blank">Доставка и оплата</a>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link site-navigation-item-delivery" href="#">Доставка и оплата</a>
               </li>
-              <li>
-                <a href="" target="_blank">О Компании</a>
+              <li class="site-navigation__item ">
+                <a class="site-navigation__link" href="#">О Компании</a>
               </li>
             </ul>
           </div>
           <div class="user-navigation-container">
             <ul class="user-navigation">
               <li class="user-navigation__search">
-                <a class="search-button" href="#">
-                  <img class="search-button__hover" src="img/search-hover.svg" alt="" width="30" height="17">
-                  <img class="search-button__default" src="img/search.svg" alt="Поиск" width="17" height="17">
-                </a>
+                <a class="search-button" href="#"></a>
+                <section class="modal-search-off">
+                  <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+                    <label class="visually-hidden" for="search">Поиск</label>
+                    <input type="text" name="" id="search" placeholder="Крем-брюле">
+                  </form>
+                </section>
               </li>
               <li class="user-navigation__login">
                 <a class="login-button" href="#">
-                  <img class="login-button__hover" src="img/login-hover.svg" width="52" height="19">
-                  <img class="login-button__default" src="img/login.svg" alt="Вход" width="21" height="19">
                   <span class="login-text">Вход</span>
                 </a>
+                <section class="login-modal login-modal-off">
+                  <h2 class="visually-hidden">Личный кабинет</h2>
+                  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                    <label class="visually-hidden" for="user-login">Логин</label>
+                    <input class="login-form__login" id="user-login" type="text"
+                      placeholder="email@example.com">
+
+                    <label class="visually-hidden" for="user-password">Пароль</label>
+                    <input class="login-form__password" id="user-password" type="password" name="password"
+                      placeholder="********">
+                    <div class="login-form__button-links">
+                      <div>
+                        <button class="login-form__button" type="submit">Войти</button>
+                      </div>
+                      <div class="login-form__links">
+                        <div class="forgot-password-container">
+                          <a href="#">Забыли пароль?</a> <br>
+                        </div>
+                        <a href="#">Новая регистрация</a>
+                      </div>
+                    </div>
+                  </form>
+                </section>
               </li>
               <li class="user-navigation__cart">
                 <a class="cart-button" href="#">
-                  <img class="cart-button__hover" src="img/cart-hover.svg" alt="" width="52" height="20">
-                  <img class="cart-button__default" src="img/cart.svg" alt="Корзина" width="21" height="20">
                   <span class="cart-text">Пусто</span>
                 </a>
               </li>
@@ -114,30 +147,62 @@
           </div>
           <section class="hits">
             <ul class="hits-list">
-              <li class="hit-item1">
-                <img src="img/1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"><br>
-                <img class="hit-label" src="img/hit.svg" alt="Хит">
-                <a href="" target="_blank">Сливочное с апельсиновым <br> джемом и цитрусовой стружкой</a>
-                <h2>310 ₽<small>/кг</small></h2>
-              </li>
-              <li class="hit-item2">
-                <img src="img/2.jpg" alt="Сливочно-кофейное с кусочками шоколада"><br>
-                <img class="hit-label" src="img/hit.svg" alt="Хит">
-                <a href="" target="_blank">Сливочно-кофейное с кусочками <br> шоколада</a>
-                <h2>380 ₽<small>/кг</small></h2> <br>
-              </li>
-              <li class="hit-item3">
-                <img src="img/3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада"><br>
-                <img class="hit-label" src="img/hit.svg" alt="Хит">
-                <a href="" target="_blank">Сливочно-клубничное с <br> присыпкой из белого шоколада</a>
-                <h2>355 ₽<small>/кг</small></h2> <br>
-              </li>
-              <li class="hit-item4">
-                <img src="img/4.jpg" alt="Сливочное крем-брюле с карамельной подливкой"><br>
-                <img class="hit-label" src="img/hit.svg" alt="Хит">
-                <a href="" target="_blank">Сливочное крем-брюле с <br> карамельной подливкой</a>
-                <h2>415 ₽<small>/кг</small></h2> <br>
-              </li>
+                <li class="hits-list__item hit-item1">
+                  <img src="img/1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"><br>
+                  <img class="hit-label" src="img/hit.svg" alt="Хит">
+                  <p class="hits-list__item-paragraph">
+                  <a class="hits-list__item-link" href="" target="_blank">Сливочное с апельсиновым <br> джемом и цитрусовой стружкой</a>
+                  </p>
+                  <h2>310 ₽<small>/кг</small></h2>
+                  <div class="ice-cream-card">
+                    <img class="ice-cream-card__hit-label" src="img/hit.svg" alt="Хит">
+                    <img class="ice-cream-card__img" src="img/1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"><br>
+                    <h2 class="hits-list__item-price">310 ₽<small>/кг</small></h2>
+                    <button class="ice-cream-card__button">Быстрый просмотр</button>
+                  </div>
+                </li>
+                <li class="hits-list__item hit-item2">
+                  <img src="img/2.jpg" alt="Сливочно-кофейное с кусочками шоколада"><br>
+                  <img class="hit-label" src="img/hit.svg" alt="Хит">
+                  <p class="hits-list__item-paragraph">
+                  <a class="hits-list__item-link" href="" target="_blank">Сливочно-кофейное с кусочками <br> шоколада</a>
+                  </p>
+                  <h2>380 ₽<small>/кг</small></h2> <br>
+                  <div class="ice-cream-card">
+                    <img class="ice-cream-card__hit-label" src="img/hit.svg" alt="Хит">
+                    <img class="ice-cream-card__img"src="img/2.jpg" alt="Сливочно-кофейное с кусочками шоколада"><br>
+                    <h2 class="hits-list__item-price">380 ₽<small>/кг</small></h2>
+                    <button class="ice-cream-card__button">Быстрый просмотр</button>
+                  </div>
+                </li>
+                <li class="hits-list__item hit-item3">
+                  <img src="img/3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада"><br>
+                  <img class="hit-label" src="img/hit.svg" alt="Хит">
+                  <p class="hits-list__item-paragraph">
+                  <a class="hits-list__item-link" href="" target="_blank">Сливочно-клубничное с <br> присыпкой из белого шоколада</a>
+                  </p>
+                  <h2>355 ₽<small>/кг</small></h2> <br>
+                  <div class="ice-cream-card">
+                    <img class="ice-cream-card__hit-label" src="img/hit.svg" alt="Хит">
+                    <img class="ice-cream-card__img" src="img/3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада"><br>
+                    <h2>355 ₽<small>/кг</small></h2> <br>
+                    <button class="ice-cream-card__button">Быстрый просмотр</button>
+                  </div>
+                </li>
+                <li class="hits-list__item hit-item4">
+                  <img src="img/4.jpg" alt="Сливочное крем-брюле с карамельной подливкой"><br>
+                  <img class="hit-label" src="img/hit.svg" alt="Хит">
+                  <p class="hits-list__item-paragraph">
+                  <a class="hits-list__item-link" href="" target="_blank">Сливочное крем-брюле с <br> карамельной подливкой</a>
+                  </p>
+                  <h2>415 ₽<small>/кг</small></h2> <br>
+                  <div class="ice-cream-card">
+                    <img class="ice-cream-card__hit-label" src="img/hit.svg" alt="Хит">
+                    <img class="ice-cream-card__img" src="img/4.jpg" alt="Сливочное крем-брюле с карамельной подливкой"><br>
+                    <h2>415 ₽<small>/кг</small></h2> <br>
+                    <button class="ice-cream-card__button">Быстрый просмотр</button>
+                  </div>
+                </li>
             </ul>
           </section>
           <section class="preferences">
@@ -220,7 +285,7 @@
             <span class="number">8 812 450-25-25</span><br>
             (с 10 до 20 ежедневно)
           </p>
-          <a class="contact-button" href="#">Форма обратной связи</a>
+          <button class="contact-button">Форма обратной связи</button>
         </section>
         </div>
         </div>
@@ -267,51 +332,28 @@
             </ul>
           </menu>
           <section class="copyright">
-            <a  href="https://htmlacademy.ru/intensive/htmlcss">
+            <a class="logo-link" href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="108" height="39"><br>
             </a>
-            Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2019
+            Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2020
           </section>
         </footer>
-        <section class="visually-hidden">
-          <!--Будущий поп-ап-->
-          <ul>
-            <li class="legend">Новинки</li>
-            <li>Сливочное</li>
-            <li>Щербеты</li>
-            <li>Фруктовый лёд</li>
-            <li>Мелорин</li>
-          </ul>
-        </section>
-        <section class="visually-hidden">
-          <h2 class="visually-hidden">Личный кабинет</h2>
-          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-            <p>
-              <label for="user-login">Логин</label>
-              <input id="user-login" type="text" name="login"
-                placeholder="email@example.com">
-            </p>
-            <p>
-              <label for="user-password">Пароль</label>
-              <input id="user-password" type="password" name="password"
-                placeholder="********">
-            </p>
-            <button class="button" type="submit">
-              Войти
+        <div class="modal-overlay">
+          <section class="feedback-modal">
+            <form class="feedback-modal__form" id="feedback-modal__form">
+              <label for="feedback-modal__form">Мы обязательно вам ответим!</label>
+              <input class="feedback-modal__form-name" type="text" name="name" placeholder="Имя Фамилия">
+              <input class="feedback-modal__form-email" type="email" placeholder="email@example.com">
+              <textarea class="feedback-modal__form-textarea" rows="8" cols="50" placeholder="В свободной форме"></textarea>
+              <button class="feedback-modal__button" type="button">Отправить</button>
+            </form>
+            <button class="feedback-modal__button-close">
+              <img src="img/feedback-modal-close.svg" width="18" height="17">
             </button>
-            <p>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
-            </p>
-          </form>
-        </section>
-        <section class="visually-hidden">
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="search">Поиск</label>
-            <input type="text" name="" id="search" placeholder="Что ищем?">
-          </form>
-        </section>
+          </section>
+        </div>
       </div>
     </div>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
