@@ -1215,7 +1215,14 @@ border-radius: 15px;
   justify-content: center;
 }
 
+.catalog-popup__list img {
+  position: absolute;
+  top: 35px;
+  left: 0px;
+}
+
 .catalog-popup__list {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
