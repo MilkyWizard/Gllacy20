@@ -1141,17 +1141,65 @@ border-radius: 15px;
   list-style: none;
 }
 
-.social-contacts a:hover {
-  border: none;
+.social-button:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.social-button:active {
+  border: 2px solid rgba(255, 255, 255, 0.7)
 }
 
 .social-button {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 50px;
+  border:  2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 100%;
+}
+
+.social-button__twitter {
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/twitter.svg");
+  background-repeat: no-repeat;
+}
+
+.social-button__twitter:hover {
+    background-image: url("../img/twitter-hover.svg");
+}
+
+.social-button__facebook {
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/facebook.svg");
+  background-repeat: no-repeat;
+}
+
+.social-button__facebook:hover {
+  background-image: url("../img/facebook-hover.svg");
+}
+
+.social-button__vkontakte {
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/vk.svg");
+  background-repeat: no-repeat;
+}
+
+.social-button__vkontakte:hover {
+  background-image: url("../img/vk-hover.svg");
+}
+
+.social-button__instagram {
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/instagram.svg");
+  background-repeat: no-repeat;
+}
+
+.social-button__instagram:hover {
+  background-image: url("../img/instagram-hover.svg");
 }
 
 .heart {
@@ -1186,6 +1234,10 @@ border-radius: 15px;
 
 .menu a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu a:hover {
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 
 .htmlacademy-link {
