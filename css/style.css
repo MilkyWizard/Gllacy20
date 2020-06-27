@@ -47,6 +47,10 @@ a:hover {
   box-shadow: 0 -1px 1px 0 #ac1000;
 }
 
+.tel-link-black {
+  color: #323232;
+}
+
 .bread-crumbs {
   width: 224px;
   position: absolute;
@@ -1852,7 +1856,7 @@ border-radius: 15px;
 }
 
 .modal-overlay-on {
-  display: inline-block;
+  display: block;
 }
 
 .feedback-modal__form {
