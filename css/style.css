@@ -11,7 +11,7 @@ body {
 }
 
 .visually-hidden {
-display: none;
+  display: none;
 }
 
 a {
@@ -768,9 +768,9 @@ a:hover {
 }
 
 .want-jam {
-background-image: url("../img/aside1.jpg");
-background-repeat: no-repeat;
-border-radius: 15px;
+  background-image: url("../img/aside1.jpg");
+  background-repeat: no-repeat;
+  border-radius: 15px;
 }
 
 .want-chocolate {
@@ -1166,7 +1166,7 @@ border-radius: 15px;
 }
 
 .social-button__twitter:hover {
-    background-image: url("../img/twitter-hover.svg");
+  background-image: url("../img/twitter-hover.svg");
 }
 
 .social-button__facebook {
