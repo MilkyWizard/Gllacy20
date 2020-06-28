@@ -1,13 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
   color: #ffffff;
-
 }
 
 .visually-hidden {
@@ -23,8 +21,6 @@ a:hover {
   color: #ffbc9e;
   border-bottom: 1px solid #a7a294;
 }
-
-
 
 .button {
   font-size: 18px;
@@ -116,7 +112,6 @@ a:hover {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -137,7 +132,6 @@ a:hover {
   padding-left: 14px;
   border-radius: 26px;
   border: none;
-
   color: #000000;
   background-color: #f7f6f3;
 }
@@ -145,7 +139,6 @@ a:hover {
 .site-navigation__link:active {
   border-radius: 50px;
   border: none;
-
   color: #000000;
   background-color: #ededed;
   box-shadow: 0 -5px 5px -5px #333333;
@@ -155,10 +148,8 @@ a:hover {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
-
   list-style: none;
 }
-
 
 .search-button {
   padding: 0;
@@ -269,7 +260,6 @@ a:hover {
   background-image: url("../img/cart-full.svg");
 }
 
-
 .cart-button:hover {
   background-color: #f8f7f4;
   color: #323232;
@@ -294,7 +284,6 @@ a:hover {
   position: absolute;
   top: 35px;
   left: -422px;
-
   width: 539px;
   height: 242px;
   background: #F8F7F4;
@@ -303,7 +292,6 @@ a:hover {
   font-size: 13px;
   line-height: 16px;
   color: #323232;
-
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -370,7 +358,6 @@ a:hover {
   margin-top: 16px;
   margin-bottom: 15px;
   margin-left: 415px;
-
   font-weight: bold;
   font-size: 15px;
   line-height: 16px;
@@ -384,7 +371,6 @@ a:hover {
   background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
   box-shadow: 0px 1px 2px rgba(172, 16, 0, 0.25);
   border-radius: 26px;
-
   font-weight: bold;
   font-size: 18px;
   line-height: 16px;
@@ -488,7 +474,6 @@ a:hover {
   padding: 0;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -584,7 +569,6 @@ a:hover {
   padding: 0;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -600,7 +584,6 @@ a:hover {
   margin: 0;
   padding: 0;
   margin-top: 6px;
-
 }
 
 .sort-form__radio {
@@ -644,7 +627,6 @@ a:hover {
   margin: 0;
   margin-top: 9px;
 }
-
 
 .sort-form__select-sort {
   width: 196px;
@@ -705,8 +687,6 @@ a:hover {
 .sort-form__fieldset {
   border: none;
 }
-
-
 
 .assortment-list {
   width: 1146px;
@@ -797,7 +777,6 @@ a:hover {
 .modal-search {
   width: 341px;
   height: 84px;
-
   background: #F8F7F4;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
@@ -805,7 +784,6 @@ a:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
   position: absolute;
   top: 35px;
   left: -310px;
@@ -873,7 +851,6 @@ a:hover {
   height: 44px;
   margin-top: 20px;
   margin-left: 19px;
-
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
@@ -881,13 +858,11 @@ a:hover {
   color: #ffffff;
   text-decoration: none;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
-
   background: #f26843;
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 50px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   border: none;
-
   cursor: pointer;
 }
 
@@ -1019,7 +994,6 @@ a:hover {
   line-height: 22px;
   font-weight: 400;
   color: #5a5a5a;
-
   background-image: url("../img/bg-grey.png");
   background-repeat: no-repeat;
   min-width: 549px;
@@ -1034,7 +1008,6 @@ a:hover {
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-
   margin: 0;
   padding-top: 30px;
   padding-bottom: 25px;
@@ -1279,16 +1252,12 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-
   list-style: none;
-
   max-width: 143px;
   min-height: 171px;
-
   padding: 0;
   padding-bottom: 5px;
   margin: 0;
-
   color: #323232;
   font-weight: 400;
   font-size: 14px;
@@ -1390,8 +1359,6 @@ a:hover {
   border-radius: 100px;
   cursor: pointer;
 }
-
-/*Стили для сетки*/
 
 .main-navigation-container {
   display: flex;
@@ -1608,7 +1575,6 @@ a:hover {
   position: absolute;
   left: 871px;
   bottom: 67px;
-
   background-image: url("../img/contacts.png");
   background-repeat: no-repeat;
   min-width: 302px;
@@ -1668,7 +1634,6 @@ a:hover {
 .distribution-form__button {
   padding: 8px 18px;
   padding-top: 9px;
-
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
@@ -1676,13 +1641,11 @@ a:hover {
   color: #ffffff;
   text-decoration: none;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
-
   background: #f26843;
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 50px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   border: none;
-
   cursor: pointer;
 }
 
@@ -1712,7 +1675,6 @@ a:hover {
   align-items: center;
   margin: 0 27px;
   padding: 13px 24px;
-
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
@@ -1721,13 +1683,11 @@ a:hover {
   vertical-align: top;
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-
   background: #f26843;
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 50px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   border: none;
-
   cursor: pointer;
 }
 
@@ -1749,9 +1709,7 @@ a:hover {
 .aside-button {
   padding: 15px 24px;
   align-self: flex-end;
-
   margin: auto 21px;
-
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
@@ -1760,13 +1718,11 @@ a:hover {
   vertical-align: top;
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-
   background: #f26843;
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 50px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   border: none;
-
   cursor: pointer;
 }
 
@@ -1784,7 +1740,6 @@ a:hover {
   color: #ffffff;
 }
 
-/*Стили для слайдера*/
 .site-wrapper {
   display: flex;
   min-width: 1200px;
@@ -1792,14 +1747,12 @@ a:hover {
   background-image: url("../img/site.jpg");
   background-repeat: no-repeat;
   background-position: top center;
-
   transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
 .site-wrapper::before,
 .site-wrapper::after {
   content: "";
-
   visibility: hidden;
 }
 
@@ -1818,9 +1771,7 @@ a:hover {
 
 .slider {
   position: relative;
-
   padding-top: 275px;
-
   text-align: center;
   color: #ffffff;
 }
@@ -1828,7 +1779,6 @@ a:hover {
 .slider-list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -1840,7 +1790,6 @@ a:hover {
   width: 700px;
   margin: 0 auto;
   margin-bottom: 27px;
-
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
@@ -1949,7 +1898,6 @@ a:hover {
   padding-top: 10px;
   margin: 0;
   margin-left: 290px;
-
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
@@ -1958,7 +1906,6 @@ a:hover {
   vertical-align: top;
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-
   background: #f26843;
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 50px;
@@ -1994,7 +1941,6 @@ a:hover {
 .button {
   display: inline-block;
   padding: 12px 44px;
-
   font-weight: 600;
   font-size: 31px;
   line-height: 41px;
@@ -2003,13 +1949,11 @@ a:hover {
   vertical-align: top;
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-
   background: #f26843;
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 50px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   border: none;
-
   cursor: pointer;
 }
 
@@ -2086,13 +2030,11 @@ a:hover {
   vertical-align: top;
   text-decoration: none;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-
   background: #f26843;
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 50px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   border: none;
-
   cursor: pointer;
 }
 
@@ -2124,9 +2066,7 @@ a:hover {
   width: 17px;
   height: 17px;
   margin-right: 8px;
-
   vertical-align: top;
-
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
