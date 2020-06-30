@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function(){
     loginModal.classList.remove("login-modal-off");
   });
 
-
   modalButtonOpen.addEventListener("click", function () {
     modal.classList.add("modal-overlay-on");
   });
